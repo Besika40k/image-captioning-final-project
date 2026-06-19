@@ -4,8 +4,8 @@ A neural network system that generates natural language captions for images. The
 
 ## Team
 
-- [Name 1] — GitHub: @Besika40k
-- [Name 2] — GitHub: @Nok1on1
+- Besik Meskhia — GitHub: @Besika40k
+- Giorgi Mikaberidze — GitHub: @Nok1on1
 
 ## Overview
 
@@ -80,38 +80,38 @@ image-captioning-final-project/
 ```
 
 3. Download the dataset:
-   - placeholder for now, we will add the exact dataset link and folder structure here once finalized
+   - **placeholder for now**, we will add the exact dataset link and folder structure here once finalized
 
 4. Download pretrained model weights (optional, if not retraining from scratch):
-   - placeholder for now, we will add the Google Drive / release link here once the model is trained
+   - **placeholder for now**, we will add the Google Drive / release link here once the model is trained
 
 ## How to Run
 
 1. Open `notebooks/data_and_training.ipynb` to walk through data loading, model architecture, and training.
 2. Open `notebooks/inference.ipynb` to generate captions on test images using the trained model.
 
-placeholder for now, we will add more detailed run instructions (expected runtime, GPU requirements, etc.) here once the pipeline is finalized
+**placeholder for now**, we will add more detailed run instructions (expected runtime, GPU requirements, etc.) here once the pipeline is finalized
 
 ## Model Architecture
 
-placeholder for now, we will add a description of the encoder (e.g. CNN-based image feature extractor) and decoder (e.g. RNN/LSTM/Transformer-based caption generator) here once the architecture is implemented
+**placeholder for now**, we will add a description of the encoder (e.g. CNN-based image feature extractor) and decoder (e.g. RNN/LSTM/Transformer-based caption generator) here once the architecture is implemented
 
 ## Training Details
 
-placeholder for now, we will add details on training setup here — number of epochs, batch size, optimizer, loss function, hardware used, training time, etc.
+**placeholder for now**, we will add details on training setup here — number of epochs, batch size, optimizer, loss function, hardware used, training time, etc.
 
 ## Results
 
-placeholder for now, we will add quantitative results (e.g. loss curves, evaluation metrics) and qualitative examples (sample generated captions) here once training is complete
+**placeholder for now**, we will add quantitative results (e.g. loss curves, evaluation metrics) and qualitative examples (sample generated captions) here once training is complete
 
 ## Failure Case Analysis
 
-placeholder for now, we will add examples of incorrect or nonsensical captions here, along with brief analysis of why the model failed on these cases
+**placeholder for now**, we will add examples of incorrect or nonsensical captions here, along with brief analysis of why the model failed on these cases
 
 ## Contributions
 
-placeholder for now, we will add a breakdown of who worked on what (data pipeline, model architecture, training, inference, documentation) here
+**placeholder for now**, we will add a breakdown of who worked on what (data pipeline, model architecture, training, inference, documentation) here
 
 ## License
 
-placeholder for now, we will add a license here if needed (e.g. MIT) — optional for a course project
+**placeholder for now**, we will add a license here if needed (e.g. MIT) — optional for a course project
