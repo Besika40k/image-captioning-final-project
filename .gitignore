@@ -1,3 +1,17 @@
+# Project ignores
+data/*
+checkpoints/*
+*.pth
+*.pt
+__pycache__/
+.ipynb_checkpoints/
+venv/
+*.zip
+
+!data/.gitkeep
+!checkpoints/.gitkeep
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
