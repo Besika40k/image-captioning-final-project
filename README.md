@@ -1,3 +1,18 @@
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![PyTorch](https://img.shields.io/badge/PyTorch-deep%20learning-orange)
+![Status](https://img.shields.io/badge/status-in%20progress-yellow)
+![License](https://img.shields.io/badge/license-MIT-green)
+## Table of Contents
+- [Overview](#overview)
+- [Project Structure](#project-structure)
+- [Setup](#setup)
+- [How to Run](#how-to-run)
+- [Model Architecture](#model-architecture)
+- [Training Details](#training-details)
+- [Results](#results)
+- [Failure Case Analysis](#failure-case-analysis)
+- [Contributions](#contributions)
+  
 # Image Captioning — Final Project
 
 A neural network system that generates natural language captions for images. The model takes an image as input and produces a descriptive sentence as output, bridging visual understanding and natural language generation.
@@ -27,29 +42,29 @@ image-captioning-final-project/
 
 ├── data/
 
-│ └── (dataset — not tracked in git, see Setup)
+│   └── (dataset — not tracked in git, see Setup)
 
 │
 
 ├── notebooks/
 
-│ ├── data_and_training.ipynb
+│   ├── data_and_training.ipynb
 
-│ └── inference.ipynb
+│   └── inference.ipynb
 
 │
 
 ├── src/
 
-│ ├── dataset.py
+│   ├── dataset.py
 
-│ ├── vocabulary.py
+│   ├── vocabulary.py
 
-│ ├── model.py
+│   ├── model.py
 
-│ ├── train.py
+│   ├── train.py
 
-│ └── utils.py
+│   └── utils.py
 
 │
 
@@ -111,6 +126,7 @@ image-captioning-final-project/
 ## Contributions
 
 **placeholder for now**, we will add a breakdown of who worked on what (data pipeline, model architecture, training, inference, documentation) here
+
 
 ## License
 
