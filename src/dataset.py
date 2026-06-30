@@ -16,7 +16,7 @@ def split_by_image(df: pd.DataFrame, val_frac=0.1, test_frac=0.1, seed=42):
     Splits dataframe by unique images to prevent data leakage.
     All 5 captions for a given image will remain in the exact same split.
     """
-    unique_images = df['image'].unique()
+    unique_images = df['image'].unique().tolist()
     
     np.random.seed(seed)
     np.random.shuffle(unique_images)
