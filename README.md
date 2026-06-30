@@ -62,6 +62,22 @@ image-captioning-final-project/
 - `src/` — modular source code (dataset handling, vocabulary, model architecture, training utilities)
 - `checkpoints/` — trained model weights
 
+## Data
+
+This project uses the Flickr8k dataset, consisting of 8,091 unique images, each paired with 5 human-written captions (40,455 total image-caption pairs).
+
+- **Format:** `data/caption_data/captions.txt` is a CSV file with a header row and two columns — `image` (filename) and `caption` (text). Each image filename appears on 5 consecutive rows, one per caption. Corresponding image files live in `data/caption_data/Images/`.
+- **Vocabulary:** built from training captions only, using a simple regex tokenizer (`\w+`, lowercased) with a minimum frequency threshold of 5 occurrences. This keeps the vocabulary at a manageable size (2,982 words) while filtering out rare typos, names, and one-off compound words. Special tokens: `<pad>`, `<start>`, `<end>`, `<unk>`.
+- **Train/val/test split:** 80/10/10, split at the image level (not the caption-row level) with a fixed random seed (42) for reproducibility. This ensures all 5 captions belonging to a given image stay within the same split, preventing data leakage between training and evaluation. Resulting split sizes:
+
+| Split      | Images | Caption rows (approx.) |
+|------------|--------|------------------------|
+| Train      | 6,473  | ~32,365                |
+| Validation | 809    | ~4,045                 |
+| Test       | 809    | ~4,045                 |
+
+The test split is held out entirely from training and model selection — it is used exclusively in `notebooks/inference.ipynb` for the final demonstration and success/failure analysis.
+
 ## Setup
 
 1. Clone the repository:
@@ -80,7 +96,17 @@ image-captioning-final-project/
 ```
 
 3. Download the dataset:
-   - placeholder for now, we will add the exact dataset link and folder structure here once finalized
+   This project uses the Flickr8k dataset (`caption_data.zip`, provided by the course).
+   Extract it so the structure matches:
+   ```text
+   data/
+   └── caption_data/
+       ├── Images/
+       │   ├── 1000268201_693b08cb0e.jpg
+       │   └── ...
+       └── captions.txt
+   ```
+   `captions.txt` should have the header `image,caption`. If your extracted archive uses a different filename (e.g. `Flickr8k.token.txt`) or folder name (e.g. `Flicker8k_Dataset/`), rename/move it to match the structure above, or update the path passed to `load_captions_df()` in the notebooks.
 
 4. Download pretrained model weights (optional, if not retraining from scratch):
    - placeholder for now, we will add the Google Drive / release link here once the model is trained
