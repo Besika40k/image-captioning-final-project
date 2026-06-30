@@ -23,7 +23,7 @@ class Vocabulary:
         
     @staticmethod
     def tokenize(text):
-        """Simple regex tokenizer, explicitly avoiding nltk."""
+        """Simple regex tokenizer."""
         return re.findall(r"\w+", text.lower())
         
     def build_vocabulary(self, caption_list, freq_threshold=5):
@@ -34,7 +34,8 @@ class Vocabulary:
             frequencies.update(tokens)
             
         idx = 4
-        for word, count in frequencies.items():
+        sorted_words = sorted(frequencies.items(), key=lambda x: (-x[1], x[0]))
+        for word, count in sorted_words:
             if count >= freq_threshold:
                 self.word2idx[word] = idx
                 self.idx2word[idx] = word

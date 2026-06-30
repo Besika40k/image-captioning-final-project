@@ -97,13 +97,6 @@ class CollateWrapper:
         
         return images, captions, lengths
 
-def collate_fn(batch):
-    """
-    Default collate function.
-    Delegates to CollateWrapper with default padding index 0.
-    """
-    wrapper = CollateWrapper(pad_idx=0)
-    return wrapper(batch)
 
 def get_dataloaders(df, image_dir, vocab, batch_size=64, num_workers=2, val_frac=0.1, test_frac=0.1, seed=42):
     """Convenience function wiring together the split, datasets, and DataLoaders."""
