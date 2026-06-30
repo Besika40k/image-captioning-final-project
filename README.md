@@ -1,11 +1,26 @@
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![PyTorch](https://img.shields.io/badge/PyTorch-deep%20learning-orange)
+![Status](https://img.shields.io/badge/status-in%20progress-yellow)
+![License](https://img.shields.io/badge/license-MIT-green)
+## Table of Contents
+- [Overview](#overview)
+- [Project Structure](#project-structure)
+- [Setup](#setup)
+- [How to Run](#how-to-run)
+- [Model Architecture](#model-architecture)
+- [Training Details](#training-details)
+- [Results](#results)
+- [Failure Case Analysis](#failure-case-analysis)
+- [Contributions](#contributions)
+  
 # Image Captioning — Final Project
 
 A neural network system that generates natural language captions for images. The model takes an image as input and produces a descriptive sentence as output, bridging visual understanding and natural language generation.
 
 ## Team
 
-- [Name 1] — GitHub: @Besika40k
-- [Name 2] — GitHub: @Nok1on1
+- Besik Meskhia — GitHub: @Besika40k
+- Giorgi Mikaberidze — GitHub: @Nok1on1
 
 ## Overview
 
@@ -27,29 +42,29 @@ image-captioning-final-project/
 
 ├── data/
 
-│ └── (dataset — not tracked in git, see Setup)
+│   └── (dataset — not tracked in git, see Setup)
 
 │
 
 ├── notebooks/
 
-│ ├── data_and_training.ipynb
+│   ├── data_and_training.ipynb
 
-│ └── inference.ipynb
+│   └── inference.ipynb
 
 │
 
 ├── src/
 
-│ ├── dataset.py
+│   ├── dataset.py
 
-│ ├── vocabulary.py
+│   ├── vocabulary.py
 
-│ ├── model.py
+│   ├── model.py
 
-│ ├── train.py
+│   ├── train.py
 
-│ └── utils.py
+│   └── utils.py
 
 │
 
@@ -109,35 +124,36 @@ The test split is held out entirely from training and model selection — it is 
    `captions.txt` should have the header `image,caption`. If your extracted archive uses a different filename (e.g. `Flickr8k.token.txt`) or folder name (e.g. `Flicker8k_Dataset/`), rename/move it to match the structure above, or update the path passed to `load_captions_df()` in the notebooks.
 
 4. Download pretrained model weights (optional, if not retraining from scratch):
-   - placeholder for now, we will add the Google Drive / release link here once the model is trained
+   - **placeholder for now**, we will add the Google Drive / release link here once the model is trained
 
 ## How to Run
 
 1. Open `notebooks/data_and_training.ipynb` to walk through data loading, model architecture, and training.
 2. Open `notebooks/inference.ipynb` to generate captions on test images using the trained model.
 
-placeholder for now, we will add more detailed run instructions (expected runtime, GPU requirements, etc.) here once the pipeline is finalized
+**placeholder for now**, we will add more detailed run instructions (expected runtime, GPU requirements, etc.) here once the pipeline is finalized
 
 ## Model Architecture
 
-placeholder for now, we will add a description of the encoder (e.g. CNN-based image feature extractor) and decoder (e.g. RNN/LSTM/Transformer-based caption generator) here once the architecture is implemented
+**placeholder for now**, we will add a description of the encoder (e.g. CNN-based image feature extractor) and decoder (e.g. RNN/LSTM/Transformer-based caption generator) here once the architecture is implemented
 
 ## Training Details
 
-placeholder for now, we will add details on training setup here — number of epochs, batch size, optimizer, loss function, hardware used, training time, etc.
+**placeholder for now**, we will add details on training setup here — number of epochs, batch size, optimizer, loss function, hardware used, training time, etc.
 
 ## Results
 
-placeholder for now, we will add quantitative results (e.g. loss curves, evaluation metrics) and qualitative examples (sample generated captions) here once training is complete
+**placeholder for now**, we will add quantitative results (e.g. loss curves, evaluation metrics) and qualitative examples (sample generated captions) here once training is complete
 
 ## Failure Case Analysis
 
-placeholder for now, we will add examples of incorrect or nonsensical captions here, along with brief analysis of why the model failed on these cases
+**placeholder for now**, we will add examples of incorrect or nonsensical captions here, along with brief analysis of why the model failed on these cases
 
 ## Contributions
 
-placeholder for now, we will add a breakdown of who worked on what (data pipeline, model architecture, training, inference, documentation) here
+**placeholder for now**, we will add a breakdown of who worked on what (data pipeline, model architecture, training, inference, documentation) here
+
 
 ## License
 
-placeholder for now, we will add a license here if needed (e.g. MIT) — optional for a course project
+**placeholder for now**, we will add a license here if needed (e.g. MIT) — optional for a course project
